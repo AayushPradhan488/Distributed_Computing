@@ -1,4 +1,5 @@
 import socket
+from datetime import datetime
 
 host = '127.0.0.1'
 port = 5000
@@ -7,7 +8,7 @@ client_server = socket.socket()
 client_server.connect((host, port))
 
 #client_server.bind((host, port))
-client_server.send('5'.encode())
+client_server.send(str(datetime.now()).encode())
 
 data = client_server.recv(1024).decode()
 

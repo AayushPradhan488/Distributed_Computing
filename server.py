@@ -21,9 +21,8 @@ while True:
     if data == 'END':
         print(f'Connection ended')
         break
-    x = fact(int(data))
-    conn.send(str(x).encode())
-    print(f'Data received: {data} sending factorial = {x}')
+    conn.send(str('OK').encode())
+    print(f'Timestamp received: {data} sending OK')
     break
 
 conn.close()
