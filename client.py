@@ -10,9 +10,9 @@ client_server.connect((host, port))
 #client_server.bind((host, port))
 client_server.send(str(datetime.now()).encode())
 
-data = client_server.recv(1024).decode()
+ts = client_server.recv(1024).decode()
 
-print(data)
+print(f'Timestamp received: {ts}')
 
 client_server.close()
 
