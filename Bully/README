@@ -1,0 +1,8 @@
+Update the following variables:
+trigger
+priority_number
+high_nodes
+low_nodes
+node1, node2, node3 ip_address and priority_number
+add nodes if required
+Ideally try with 4 nodes
